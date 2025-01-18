@@ -1,0 +1,144 @@
+.header {
+	background-image: url('./../img/sections/hero-bg-4.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 800px;
+	padding-top: 30px;
+	font-family: var(--main-font);
+}
+
+.header-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo:hover {
+	opacity: 0.7;
+	transition: 0.15s opacity ease-in;
+}
+.header-nav-list {
+	display: flex;
+	gap: 50px;
+	align-items: center;
+  font-style: normal;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.header-nav-item {
+	position: relative;
+}
+.header-nav-item::after {
+	content: "";
+	position: absolute;
+	background-color: var(--color-accent);
+	height: 1px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 100%;
+	opacity: 0;
+	transition: opacity 0.1s linear;
+	opacity: 0;
+}
+.header-nav-item:hover::after {
+	display: block;
+	opacity: 1;
+}
+.header-nav-list a {
+	transition: color 0.1s linear;
+}
+.header-nav-list a:hover {
+	color: var(--color-accent);
+}
+.header-image {
+	margin-top: 125px;
+	text-align: center;
+}
+
+@media (max-width:1000px) {
+.header-nav-list{
+	gap: 20px;
+	font-size: 14px;
+}
+.header-navigation {
+	justify-content: space-around;	
+}
+}
+@media (max-width:800px) {
+	header {
+		height: auto;
+		background-position: left top;
+	}
+	.header-logo {
+		display: none;
+	}
+	.header-image {
+		margin-top: 200px;
+		text-align: center;
+	}
+	.header-navigation {
+		justify-content: center;
+	}
+	.header-nav-list {
+		gap: 20px;
+		font-size: 14px;
+	}
+}
+@media (max-width:550px) {
+	header {
+		height: auto;
+	}
+	.header-logo {
+		display: flex;
+	}
+	.header-image {
+		margin-top: 120px;
+		text-align: center;
+	}
+	.header-navigation {
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	.header-nav-list {
+		flex-direction: column-reverse;
+		gap: 10px;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.header-nav-item a {
+		color: white;
+	}
+	.header-nav-item {
+		position: relative;
+		background-color: black;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+	}
+	.header-nav-item::before {
+		content: "";
+		position: absolute;
+		background-color: var(--color-accent);
+		width: 100%;
+		height: 2px;
+		left: 0;
+		right: 0;
+		bottom: -2px;
+		display: block;
+	}
+	.header-nav-item a:hover{
+		color: white;
+	}
+	.header-nav-item a:active{
+		color: var(--color-accent);
+	}
+	.last-header-item {
+		order: -1;
+	}
+}

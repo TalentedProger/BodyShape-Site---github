@@ -1,0 +1,13 @@
+@import './base/reset.css';
+@import './base/base.css';
+
+/* подключение блоков */
+@import './blocks/header.css';
+@import './blocks/section-trainers.css';
+@import './blocks/section-beast.css';
+@import './blocks/section-trainings.css';
+@import './blocks/contacts-us.css';
+@import './blocks/footer.css';
+/* подключение стороннего шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+

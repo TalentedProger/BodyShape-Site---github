@@ -1,0 +1,69 @@
+.training-types {
+	margin-bottom: 120px;
+}
+.training-types__header {
+	margin-bottom: 50px;
+}
+.training-types__title {
+font-weight: 600;
+font-size: clamp(2.625rem, 2.125rem + 2.5vw, 4rem);
+letter-spacing: -5px;
+text-align: center;
+color: var(--color-accent);
+text-transform: uppercase;
+}
+.training-types__subtitle {
+font-family: var(--accent-font);
+font-weight: 300;
+font-size: 16px;
+line-height: 200%;
+text-align: center;
+color: var(--color-white);
+}
+.training-groups-grid {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 80px 20px;
+}
+.card-grid-group {
+	margin: 0 auto;
+	/* max-width: 250px; */
+}
+.card-group-img {
+	position: relative;
+	margin-bottom: 15px;
+	border-radius: 20px;
+}
+
+.card-group-title {
+font-weight: 700;
+font-size: clamp(1.125rem, 0.898rem + 1.14vw, 1.75rem);
+color: var(--color-accent);
+text-align: center;
+text-transform: uppercase;
+}
+
+.card-group-title a {
+	color: var(--color-accent);
+}
+
+.card-group-title >a:hover {
+	color: #DAA520;
+}
+
+/* media */
+@media (max-width:1000px) {
+}
+@media (max-width:800px) {
+	.training-groups-grid {
+		grid-template-columns: repeat(2,2fr);
+	}
+}
+@media (max-width:550px) {
+	.training-groups-grid {
+		grid-template-columns: repeat(1,4fr);
+	}
+	.training-types {
+		margin-bottom: 80px;
+	}
+}

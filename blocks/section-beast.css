@@ -1,0 +1,57 @@
+.section-beast {
+	display: flex;
+	align-items: center;
+	height: 750px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	background-image: url('./../img/sections/beast-bg.jpg');
+	--bevel:10%;
+	clip-path: polygon(0% var(--bevel),100% 0%,100% calc(100% - var(--bevel)),0% 100%);
+	color:#fff;
+	margin-bottom: 120px;
+}
+.section-beast-wrapper {
+	margin-top: 8rem;
+}
+
+.section-beast-title  {
+	font-family: "Bebas Neue";
+	font-weight: 500;
+	font-style: normal;
+	/* font-size: 72px; */
+	font-size: clamp(2.625rem, 1.943rem + 3.41vw, 4.5rem);
+	text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.section-beast-desc {
+font-family: var(--accent-font);
+font-weight: 300;
+/* font-size: 22px; */
+font-size: clamp(0.875rem, 0.693rem + 0.91vw, 1.375rem);
+line-height: 150%;
+padding-bottom: 2rem;
+}
+.beast-button {
+	display: inline-block;
+	width: 200px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 22px;
+	text-transform: uppercase;
+	background-color: var(--color-accent);
+	color: #000;
+	transition: all 0.2s linear;
+}
+.beast-button:hover {
+	background-color: var(--color-white);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* media */
+@media (max-width:550px) {
+	.section-beast {
+		margin-bottom: 60px;
+	}
+}
